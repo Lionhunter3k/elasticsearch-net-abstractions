@@ -14,18 +14,9 @@ namespace Elastic.Xunit.ExampleComplex
 			var info = this.Client.RootNodeInfo();
 
 			info.IsValid.Should().BeTrue();
-
-			this.Client.CreateIndex("INASda");
-
-
-			this.Client.LowLevel.Search<StringResponse>(PostData.Serializable(new
-			{
-				query = new { query_string = 1 }
-			}));
-
 		}
 	}
-//
+
 //	public class MyGenericTestClass : ClusterTestClassBase<TestGenericCluster>
 //	{
 //		public MyGenericTestClass(TestGenericCluster cluster) : base(cluster) { }

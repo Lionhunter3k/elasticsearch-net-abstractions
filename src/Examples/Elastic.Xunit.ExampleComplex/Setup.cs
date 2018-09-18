@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Elastic.Managed.Configuration;
 using Elastic.Xunit.ExampleComplex;
 
