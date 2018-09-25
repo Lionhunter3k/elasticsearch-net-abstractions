@@ -7,7 +7,7 @@ namespace Elastic.Xunit.ExampleComplex
 	{
 		public InheritYetAgainTestsClass(TestCluster cluster) : base(cluster) { }
 
-		[I] public void TestOnClassItselfAgain()
+		[I] public void AnotherAdditionalTest()
 		{
 			var info = this.Client.RootNodeInfo();
 

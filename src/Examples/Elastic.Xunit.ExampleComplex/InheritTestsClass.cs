@@ -3,11 +3,11 @@ using FluentAssertions;
 
 namespace Elastic.Xunit.ExampleComplex
 {
-	public class InheritTestsClass : MyTestClass
+	public class InheritTestsClass : TestingClass
 	{
 		public InheritTestsClass(TestCluster cluster) : base(cluster) { }
 
-		[I] public void TestOnClassItself()
+		[I] public void AdditionalTest()
 		{
 			var info = this.Client.RootNodeInfo();
 
